@@ -52,40 +52,28 @@ Hi! I'm **Sushmitha**, a Frontend Developer with 4+ years of experience building
 ---
 
 ## ⚙️ How to Run Locally
-1. **Clone the repository**
 
+1. Clone the repository
 ```bash
 git clone https://github.com/sushmithajp/movie-explorer.git
 cd movie-explorer
 
-2. **Install dependencies**
+
+2. Install dependencies
 npm install
 
 
-
-3. **Create a .env file**
+3. Create a .env file
 In the root directory, create a .env file and add your movie API key (for TMDb or OMDb):
 VITE_API_KEY=your_api_key_here
 
 
-4. **Run the development server**
+4. Run the development server
 npm run dev
 
 
-5. **Open in browser**
+5. Open in browser
 Visit: http://localhost:5173
 The app should now be running locally! 🚀
 
-
-📁 Project Structure (Minimal & Scalable)
-bash
-Copy
-Edit
-src/
-├── components/       # Reusable UI components
-├── pages/            # Route-based pages
-├── hooks/            # Custom hooks
-├── services/         # API calls
-├── assets/           # Static files like images
-├── App.tsx           # Root app
-└── main.tsx          # Entry point
+---
