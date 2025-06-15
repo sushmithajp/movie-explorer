@@ -1,54 +1,91 @@
-# React + TypeScript + Vite
+# 🎬 Movie Explorer — A React + TypeScript + Vite Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> 👩‍💻 Created by an Angular Developer learning React
 
-Currently, two official plugins are available:
+This is a **personal learning project** built with **React**, **TypeScript**, and **Vite** to explore the core concepts of React while building something meaningful — a **Movie Explorer** app that lets users search for movies, view details, and save favorites.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 📸 Preview
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+![movie-explorer-preview](./public/preview.png)
+> *Search & explore movies, watch trailers, and build your favorites list.*
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+---
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🚀 Tech Stack
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- **React 18** (Functional Components + Hooks)
+- **TypeScript**
+- **Vite** (Blazing fast dev experience)
+- **Tailwind CSS** for styling
+- **React Router** for client-side routing
+- **TMDb API** (or OMDb) for movie data
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+---
+
+## 📚 Features & Concepts Covered
+
+As an Angular developer, I used this project to dive into the React world and explore the following:
+
+| Feature / Concept            | Covered? |
+|-----------------------------|----------|
+| JSX                         | ✅       |
+| Functional Components       | ✅       |
+| useState, useEffect Hooks   | ✅       |
+| React Router DOM            | ✅       |
+| Lifting State Up            | ✅       |
+| Prop Drilling               | ✅       |
+| API Integration (TMDb)      | ✅       |
+| Conditional Rendering       | ✅       |
+| `Watch Later` & `Liked` Lists | ✅     |
+| Tailwind CSS                | ✅       |
+| Environment Variables (.env)| ✅       |
+| Folder Structure & Separation of Concerns | ✅ |
+
+---
+
+## 🧑‍💼 About Me
+
+Hi! I'm **Sushmitha**, a Frontend Developer with 4+ years of experience building production-grade apps with Angular. I'm now transitioning into the React ecosystem and using this project to master core concepts and build confidence for React roles.
+
+---
+
+## ⚙️ How to Run Locally
+1. **Clone the repository**
+
+```bash
+git clone https://github.com/sushmithajp/movie-explorer.git
+cd movie-explorer
+
+2. **Install dependencies**
+npm install
+
+
+
+3. **Create a .env file**
+In the root directory, create a .env file and add your movie API key (for TMDb or OMDb):
+VITE_API_KEY=your_api_key_here
+
+
+4. **Run the development server**
+npm run dev
+
+
+5. **Open in browser**
+Visit: http://localhost:5173
+The app should now be running locally! 🚀
+
+
+📁 Project Structure (Minimal & Scalable)
+bash
+Copy
+Edit
+src/
+├── components/       # Reusable UI components
+├── pages/            # Route-based pages
+├── hooks/            # Custom hooks
+├── services/         # API calls
+├── assets/           # Static files like images
+├── App.tsx           # Root app
+└── main.tsx          # Entry point
