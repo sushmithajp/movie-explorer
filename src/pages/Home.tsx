@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import type { Movie } from "../interfaces/movies";
 import { useNavigate } from "react-router";
-const API_KEY = "6725ab69d5eb1ee729180dcb23b0a48c";
+const API_KEY = import.meta.env.VITE_TMDB_API_KEY;
 
 export default function Home() {
   const [searchTerm, setSearchTerm] = useState("");
